@@ -1,24 +1,33 @@
 {
     "name": "book-app",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Cool book app",
     "main": "app.js",
+    "type": "module",
     "scripts": {
-        "build": "rollup",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "live-server",
+        "build": "rollup -c --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Waspish/BookShop.git"
     },
     "keywords": [
         "books"
     ],
     "author": "Andrei Astapenka",
     "license": "ISC",
-    "dependencies": {
-        "axios": "^1.6.8"
+    "bugs": {
+        "url": "https://github.com/Waspish/BookShop/issues"
     },
+    "homepage": "https://github.com/Waspish/BookShop#readme",
     "devDependencies": {
-        "rollup": "^4.13.0"
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "eslint": "^8.33.0",
+        "rollup": "^3.14.0",
+        "rollup-plugin-import-css": "^3.1.0"
     },
-    "peerDependencies": {},
-    "peerDependenciesMeta": {},
-    "optionalDependencies": {}
+    "dependencies": {
+        "on-change": "^4.0.2"
+    }
 }
